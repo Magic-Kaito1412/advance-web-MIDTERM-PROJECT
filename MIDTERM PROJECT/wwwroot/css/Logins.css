@@ -1,0 +1,117 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*background:#fdd4ff;*/
+    background:black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 90% 100%;
+}
+.login-container {
+    background: #e1e1e1;
+    margin: 0 -16.1vw 0 auto;
+    height: 100vh;
+    padding: 30px;
+    padding-bottom: 0;
+    max-width: 30vw;
+    text-align: center;
+    box-shadow: 1px 1px 10px black;
+    background: #f7fbf1
+}
+.login-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background: transparent;
+    position: relative;
+    margin-top: 2cm;
+    width: 100%;
+}
+.login-inputs,.title
+{
+    position:relative;
+    top:20%;
+}
+input {
+    outline: none;
+    border: none;
+    width:100%;
+    padding:10px 0px 10px 0px;
+    background:none;
+    border-bottom:1px solid black;
+}
+button {
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 13px;
+    border: 1px solid black;
+    transition-duration:0.4s;
+}
+    button:hover {
+        color: #d804f8;
+        border: 1px solid #d804f8;
+    }
+.Register-section
+{
+  margin-top:12em;
+  font-weight:bold;
+}
+#forgot
+{
+    font-weight:normal;
+    position:relative;
+    bottom:7px;
+    font-size:15px;
+    margin-bottom:30px;
+}
+#accounts
+{
+    font-size:14px;
+    font-weight:normal;
+    color:#9b9898;
+    border-bottom:1px solid black;
+    display:inline-block;
+    width:220px;
+    padding-bottom:8px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* space between icons */
+}
+
+    .social-icons img {
+        width: 40px;
+        cursor: pointer;
+    }
+
+.fadeImage{
+    position: fixed;
+    top: 0; /* stick to the top */
+    left: 0; /* start from left edge */
+    width: 80%; /* full width */
+    height: 100vh; /* adjust as needed */
+    object-fit: cover; /* maintain aspect ratio and cover */
+    z-index: -1; /* behind content */
+    
+}
+    .fadeImage img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 2s ease-in-out; /* smooth fade */
+    }
+
+    .fadeImage img.active {
+        opacity: 1;
+    }

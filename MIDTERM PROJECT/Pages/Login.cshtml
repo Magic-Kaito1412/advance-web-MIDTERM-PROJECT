@@ -1,0 +1,64 @@
+﻿@page
+@model MIDTERM_PROJECT.Pages.LoginModel
+@{
+    Layout = "_Layout";
+    ViewData["BodyClass"] = "login-page";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/Logins.css" />
+}
+@section Scripts {
+    <script>
+        const images = [
+            'image1.jpg',
+            'image2.jpg',
+            'image3.jpg'
+        ];
+
+        let current = 0;
+        const slider = document.getElementById('slider');
+
+        function fadeImages() {
+            // set next image
+            slider.classList.remove('active');
+            setTimeout(() => {
+                slider.src = images[current];
+                slider.classList.add('active');
+            }, 2000);
+
+            // increment index
+            current = (current + 1) % images.length;
+        }
+
+        // start slideshow
+        slider.classList.add('active'); 
+        setInterval(fadeImages, 6000); 
+    </script>
+}
+
+
+<div class="fadeImage">
+    <img id="slider" src="~/image1.jpg" width="30px" />
+</div>
+
+<div class="login-container">
+    <h1 class="title">Login Account</h1>
+    <div class="login-inputs">
+        <input type="text" required placeholder="Enter Email Address..." />
+        <input type="password" required placeholder="Enter Password..." />
+        <button>Login</button>
+    </div>
+
+    <div class="Register-section">
+        <p id="forgot">Forgot Password?</p>
+        <p>Register Account</p>
+        <p id="accounts">
+            Login account with
+        </p>
+        <div class="social-icons">
+            <img src="~/search.png" alt="Google" />
+            <img src="~/communication.png" alt="Facebook" />
+        </div>
+    </div>
+</div>
+  

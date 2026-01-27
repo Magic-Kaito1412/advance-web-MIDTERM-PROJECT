@@ -1,0 +1,19 @@
+﻿@page
+@model MIDTERM_PROJECT.Pages.RegisterModel
+@{
+    Layout = "_Layout";
+    ViewData["BodyClass"] = "login-page";
+}
+@section Styles
+{
+    <link rel="stylesheet" href="~/css/Register.css" />
+}
+<div class="register-container">
+    <h1 id="title">Register Account</h1>
+    <div class="input-contain">
+        <input type="Text" placeholder="Enter Email..." required/>
+        <input type="password" placeholder="Enter New Password..." required/>
+        <input type="password" placeholder="Re-Enter Password..." required/>
+        <button>Register Account</button>
+    </div>
+</div>
