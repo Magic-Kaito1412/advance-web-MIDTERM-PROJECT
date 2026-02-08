@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
+<<<<<<< HEAD
 VisualStudioVersion = 17.14.36414.22 d17.14
+=======
+VisualStudioVersion = 17.14.36414.22
+>>>>>>> NEED-WORK
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIDTERM PROJECT", "MIDTERM PROJECT\MIDTERM PROJECT.csproj", "{68C2B1A9-6366-45E9-83C7-C9E5EB51485B}"
 EndProject
