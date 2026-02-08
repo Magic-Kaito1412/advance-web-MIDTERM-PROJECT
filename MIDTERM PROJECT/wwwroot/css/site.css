@@ -24,5 +24,4 @@ body {
 }
 
 .login-page header,
-    display: none !important;
-}
+.login-page footer{display: none !important}
